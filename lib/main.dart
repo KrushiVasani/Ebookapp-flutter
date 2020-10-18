@@ -42,7 +42,7 @@ class MyApp extends StatelessWidget {
                   builder: (BuildContext context, AppProvider appProvider, Widget child) {
                     return MaterialApp(
                       key: appProvider.key,
-                      debugShowCheckedModeBanner: false,
+                      // debugShowCheckedModeBanner: false,
                       navigatorKey: appProvider.navigatorKey,
                       title: Constants.appName,
                       theme: Provider.of<Settings>(context).isDarkMode ? setDarkTheme : setLightTheme,
