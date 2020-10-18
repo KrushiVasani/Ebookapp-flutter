@@ -33,33 +33,35 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder<SharedPreferences>(
-      future: SharedPreferences.getInstance(),
+        future: SharedPreferences.getInstance(),
         builder:
-          (BuildContext context, AsyncSnapshot<SharedPreferences> snapshot) {
-            return ChangeNotifierProvider<Settings>.value(
-                value: Settings(snapshot.data),
-                child: Consumer<AppProvider>(
-                  builder: (BuildContext context, AppProvider appProvider, Widget child) {
-                    return MaterialApp(
-                      key: appProvider.key,
-                      // debugShowCheckedModeBanner: false,
-                      navigatorKey: appProvider.navigatorKey,
-                      title: Constants.appName,
-                      theme: Provider.of<Settings>(context).isDarkMode ? setDarkTheme : setLightTheme,
-                      darkTheme: themeData(ThemeConfig.darkTheme),
-                      initialRoute: RegisterPage.id,
-                      routes: {
-                         RegisterPage.id: (context) => RegisterPage(),
-                         LoginPage.id: (context) => LoginPage(),
-                         ForgotPassword.id: (context) => ForgotPassword(),
-                         Done.id: (context) => Done(),
-                      },
-                    );
+            (BuildContext context, AsyncSnapshot<SharedPreferences> snapshot) {
+          return ChangeNotifierProvider<Settings>.value(
+            value: Settings(snapshot.data),
+            child: Consumer<AppProvider>(
+              builder: (BuildContext context, AppProvider appProvider,
+                  Widget child) {
+                return MaterialApp(
+                  key: appProvider.key,
+                  debugShowCheckedModeBanner: false,
+                  navigatorKey: appProvider.navigatorKey,
+                  title: Constants.appName,
+                  theme: Provider.of<Settings>(context).isDarkMode
+                      ? setDarkTheme
+                      : setLightTheme,
+                  darkTheme: themeData(ThemeConfig.darkTheme),
+                  initialRoute: RegisterPage.id,
+                  routes: {
+                    RegisterPage.id: (context) => RegisterPage(),
+                    LoginPage.id: (context) => LoginPage(),
+                    ForgotPassword.id: (context) => ForgotPassword(),
+                    Done.id: (context) => Done(),
                   },
-                ),
-            );
-        }
-    );
+                );
+              },
+            ),
+          );
+        });
   }
 
   // Apply font to our app's theme
@@ -71,4 +73,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
