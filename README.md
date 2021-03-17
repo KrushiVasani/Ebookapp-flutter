@@ -6,7 +6,7 @@ A new Flutter application.
 
 This project is a starting point for a Flutter application.
 
-##Screenshots
+## Screenshots
 
 <p>
   <img src="https://github.com/KrushiVasani/Ebookapp-flutter/blob/master/Screenshots/Screenshot_2021-03-17-10-59-49-598_com.example.ebook_app.jpg" width="350" >
@@ -21,6 +21,8 @@ This project is a starting point for a Flutter application.
    <img src="https://github.com/KrushiVasani/Ebookapp-flutter/blob/master/Screenshots/Screenshot_2021-03-17-11-01-27-009_android.jpg" width="350">
   <img src="https://github.com/KrushiVasani/Ebookapp-flutter/blob/master/Screenshots/Screenshot_2021-03-17-11-02-03-533_com.example.ebook_app.jpg" width="350">
    <img src="https://github.com/KrushiVasani/Ebookapp-flutter/blob/master/Screenshots/Screenshot_2021-03-17-11-02-08-456_com.example.ebook_app.jpg" width="350">
+  
+## Dark Mode
   <img src="https://github.com/KrushiVasani/Ebookapp-flutter/blob/master/Screenshots/Screenshot_2021-03-17-11-02-37-130_com.example.ebook_app.jpg" width="350">
    <img src="https://github.com/KrushiVasani/Ebookapp-flutter/blob/master/Screenshots/Screenshot_2021-03-17-11-02-44-090_com.example.ebook_app.jpg" width="350">
   <img src="https://github.com/KrushiVasani/Ebookapp-flutter/blob/master/Screenshots/Screenshot_2021-03-17-11-02-56-475_com.example.ebook_app.jpg" width="350">
